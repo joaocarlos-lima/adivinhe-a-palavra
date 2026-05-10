@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./forca.css">
+    <title>Jogo da forca </title>
+</head>
+<body>
+    <main>
+        <p class="letrasConteiner"></p>
+        <div class="q1">
+            <p class="titulo">ADVINHE A PALAVRA</p>
+            <img class="tutorialBotao" src="./src/tutorial.icon.png" onclick="abrirtutorial()">
+        </div>
+        <div class="barraVidas">
+            <div class="vidas"></div>
+        </div>
+        <p class="aviso"> </p>
+        <div class="conteinerPalavra"></div>
+        <input class="inputLetra" type="text" maxlength="1" placeholder="Digite a letra aqui">
+        <button class="enviarLetra" onclick="verificar()">Enviar</button>
+        <div class="popup">
+            <p class="mensagem"></p>
+            <p class="revelar"></p>
+            <button class="jogarNovamente" onclick="location.reload()">Jogar novamente</button>
+        </div>
+        <div class="popupTutorial">
+            <p class="subTit">Como funciona</p>
+            <p class="texto">O objetivo é descobrir qual é a palavra secreta antes que suas vidas acabem. No início da partida, uma palavra é escolhida aleatoriamente e todas as suas letras ficam escondidas. O jogador deve tentar adivinhar a palavra digitando uma letra por vez.</p>
+            <p class="texto">Sempre que uma letra correta for digitada, ela aparecerá em todas as posições em que existir na palavra. Caso a letra não exista, o jogador perderá uma vida e a barra de vidas diminuirá. As letras erradas digitadas também ficarão registradas para evitar repetições. O jogo aceitará somente letras.</p>
+            <p class="texto"> A vitória acontece quando todas as letras da palavra forem reveladas. Já a derrota ocorre quando todas as vidas forem perdidas. Ao perder, a palavra correta será mostrada na tela para que o jogador saiba qual era a resposta.</p>
+            <button class="fecharTutorial" onclick="fechartutorial()">Fechar tutorial</button>
+        </div>
+    </main>
+
+
+
+
+</body>
+<script src="./forca.js"></script>
+</html>
