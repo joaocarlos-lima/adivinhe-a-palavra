@@ -38,7 +38,6 @@ function construirPalavra() {
         "NAVEGADOR",
         "FIREWALL",
         "CRIPTOGRAFIA",
-        "INTELIGENCIA ARTIFICIAL",
         "ROBOTICA",
         "AUTOMACAO",
         "CIBERSEGURANCA",
@@ -65,7 +64,7 @@ function construirPalavra() {
         "VIRTUALIZACAO",
         "METAVERSO"
     ];
-    let x = Math.floor(Math.random() * 50);
+    let x = Math.floor(Math.random() * 49);
     palavra = palavrasTecnologia[x];
 
 
